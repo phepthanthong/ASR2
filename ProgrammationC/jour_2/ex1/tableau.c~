@@ -1,0 +1,20 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+void saisir(int *p, int n)
+{
+  printf("Nhap so phan tu cua mang: \n");
+  scanf("%d",&n);
+  printf("Nhap cac phan tu cua mang \n");
+  int i;
+  for (i=0;i<=n;i++)
+    {
+      printf("element %d = ",i);
+      scanf("%d",&p[i]); //&p[i]
+    }
+}
+int main()
+{
+  int *p,n;
+  saisir(p,n);
+}

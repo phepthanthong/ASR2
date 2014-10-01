@@ -1,0 +1,28 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+void saisir(int *p[], int n)
+{
+  printf("Nhap so N: ");
+  scanf("%d",&n);
+  printf("Nhap tung phan tu cua mang: \n");  
+  int i;
+  for (i=0;i<=n;i++)
+    {
+      printf("p[%d] =  ",i);
+      scanf("%d",&p[i]);
+    }
+}
+
+
+
+int main()
+{
+  int *p[],n;
+  saisir(p,n);
+  /*const int MAX = 10;
+  int *ptrmin;
+  ptrmin = pointeurMin (t,taille);
+  printf("min: \n",*ptrmin);
+  printf("Adresse min: \n", ptrmin); */
+}
